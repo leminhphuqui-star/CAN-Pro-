@@ -3,21 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAN Project | 9th Galaxy Aristocracy</title>
+    <title>CAN-Pro- | Sovereign Financial Protocol</title>
     <style>
-        body { background-color: #0a0a0a; color: #d4af37; font-family: 'Times New Roman', serif; text-align: center; padding: 50px; }
-        .container { border: 1px solid #d4af37; padding: 30px; display: inline-block; border-radius: 10px; }
-        h1 { letter-spacing: 5px; }
-        p { font-style: italic; }
+        :root {
+            --gold: #D4AF37;
+            --dark-bg: #050505;
+            --text-gray: #a0a0a0;
+            --glass: rgba(255, 255, 255, 0.02);
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: radial-gradient(circle at center, #111111 0%, #000000 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 5rem 3rem;
+            border-radius: 40px;
+            text-align: center;
+            max-width: 900px;
+            width: 85%;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            width: 160px;
+            margin-bottom: 2.5rem;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
+            transition: all 0.5s ease;
+        }
+
+        .logo:hover {
+            filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.6));
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: var(--gold);
+            font-size: 3.5rem;
+            letter-spacing: 15px;
+            margin: 0;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+
+        .motto {
+            font-style: italic;
+            color: #666;
+            margin: 1.5rem 0 3rem;
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            line-height: 1.8;
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            padding-top: 3rem;
+        }
+
+        .feature-item h3 {
+            color: var(--gold);
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .feature-item p {
+            font-size: 0.75rem;
+            color: #555;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .features { grid-template-columns: 1fr; gap: 2rem; }
+            h1 { font-size: 2.5rem; }
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>CAN TOKEN</h1>
-        <img src="gemini-svg (1).svg" alt="CAN Logo" width="150">
-        <p>A decentralized financial protocol for the aristocratic magnates of the 9th Galaxy.</p>
-        <hr color="#d4af37">
-        <p><strong>Official Contract:</strong> 0x174eE764658D08f5c3801Cf7C1Ac3bEE1B6aE373</p>
+        <img src="gemini-svg (2).svg" alt="CAN Protocol" class="logo">
+        
+        <h1>CAN-PRO-</h1>
+        <p class="motto">"The quintessence of wealth, governed by absolute sovereign wisdom."</p>
+        
+        <div class="description">
+            A premier decentralized financial protocol engineered for monarchs and elite magnates. 
+            Sustainable prosperity across eras, accelerating beyond the speed of light.
+        </div>
+
+        <div class="features">
+            <div class="feature-item">
+                <h3>Sovereign Security</h3>
+                <p>Multi-dimensional protection</p>
+            </div>
+            <div class="feature-item">
+                <h3>Elite Velocity</h3>
+                <p>Faster than light transactions</p>
+            </div>
+            <div class="feature-item">
+                <h3>Governance</h3>
+                <p>CAN Financial Dept</p>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
